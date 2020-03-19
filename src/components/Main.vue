@@ -1,6 +1,8 @@
 <template>
   <v-container>
-    salut c'est cool
+    <v-card-title>
+      SITE EN CONSTRUCTION
+    </v-card-title>
   </v-container>
 </template>
 

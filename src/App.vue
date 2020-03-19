@@ -36,6 +36,12 @@
     </v-app-bar>
 
     <v-content>
+      <v-alert type="warning">
+        Ce site est en construction.
+      </v-alert>
+    </v-content>
+
+    <v-content>
       <Main/>
     </v-content>
     <v-divider></v-divider>

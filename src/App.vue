@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="#17358B"
       dark
     >
       <div class="d-flex align-center">
@@ -25,6 +25,7 @@
       >
         <v-icon x-large>mdi-github</v-icon>
       </v-btn>
+      <v-divider vertical inset></v-divider>
       <v-btn
         href="https://www.linkedin.com/in/mathias-top-93254a174/"
         target="_blank"
@@ -34,11 +35,12 @@
       </v-btn>
     </v-app-bar>
 
-    <!--<v-content>
-      <HelloWorld/>
-    </v-content>-->
     <v-content>
       <Main/>
+    </v-content>
+    <v-divider></v-divider>
+    <v-content>
+      <Experience/>
     </v-content>
   </v-app>
 </template>
@@ -46,12 +48,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import Main from './components/Main.vue'
+import Experience from './components/Experience.vue'
 
 export default Vue.extend({
   name: 'App',
 
   components: {
-    Main
+    Main,
+    Experience
   },
 
   data: () => ({

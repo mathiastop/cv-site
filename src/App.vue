@@ -48,6 +48,10 @@
     <v-content>
       <Experience/>
     </v-content>
+    <v-divider></v-divider>
+    <v-content>
+      <Formation/>
+    </v-content>
   </v-app>
 </template>
 
@@ -55,13 +59,15 @@
 import Vue from 'vue'
 import Main from './components/Main.vue'
 import Experience from './components/Experience.vue'
+import Formation from './components/Formation.vue'
 
 export default Vue.extend({
   name: 'App',
 
   components: {
     Main,
-    Experience
+    Experience,
+    Formation
   },
 
   data: () => ({

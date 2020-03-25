@@ -22,7 +22,7 @@
               <v-list-item-title style="font-size: 70px; color: darkorange">
                 Expert en Technologie de l'Information
               </v-list-item-title>
-              <v-list-item-subtitle>
+              <v-list-item-subtitle style="font-size: 30px">
                 Epitech - Lille - 2023
               </v-list-item-subtitle>
             </v-list-item-content>
@@ -53,7 +53,7 @@
             <v-list-item-title style="font-size: 70px; color: darkorange">
               Expert en Technologie de l'Information
             </v-list-item-title>
-            <v-list-item-subtitle>
+            <v-list-item-subtitle style="font-size: 30px">
               Epitech - Lille - 2023
             </v-list-item-subtitle>
           </v-list-item-content>

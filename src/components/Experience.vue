@@ -49,7 +49,7 @@
         </div>
         <v-list>
 
-          <v-list-item two-line>
+          <v-list-item>
             <v-list-item-content>
               <v-list-item-title style="font-size: 70px; color: darkorange">
                 Développeur Web
@@ -65,7 +65,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item>
+          <v-list-item two-line>
             <v-list-item-content>
               <v-list-item-title style="font-size: 70px; color: darkorange">
                 Rayonnage

@@ -10,20 +10,20 @@
           <v-list-item>
             <v-list-item-content>
               <v-list-item-title style="font-size: 70px; color: darkorange">
-                Baccalauréat STI2D
+                Expert en Technologie de l'Information
               </v-list-item-title>
               <v-list-item-subtitle style="font-size: 30px">
-                Lycée St Rémi - Roubaix - 2018
+                Epitech - Lille - 2023
               </v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
           <v-list-item two-line>
             <v-list-item-content>
               <v-list-item-title style="font-size: 70px; color: darkorange">
-                Expert en Technologie de l'Information
+                Baccalauréat STI2D
               </v-list-item-title>
               <v-list-item-subtitle style="font-size: 30px">
-                Epitech - Lille - 2023
+                Lycée St Rémi - Roubaix - 2018
               </v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>

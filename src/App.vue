@@ -56,6 +56,10 @@
     <v-content>
       <Competences/>
     </v-content>
+    <v-divider></v-divider>
+    <v-content>
+      <Realisations/>
+    </v-content>
   </v-app>
 </template>
 
@@ -65,6 +69,7 @@ import Main from './components/Main.vue'
 import Experience from './components/Experience.vue'
 import Formation from './components/Formation.vue'
 import Competences from './components/Competences.vue'
+import Realisations from './components/Realisations.vue'
 
 export default Vue.extend({
   name: 'App',
@@ -73,7 +78,8 @@ export default Vue.extend({
     Main,
     Experience,
     Formation,
-    Competences
+    Competences,
+    Realisations
   },
 
   data: () => ({

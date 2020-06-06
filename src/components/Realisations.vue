@@ -4,7 +4,7 @@
       <v-col cols="1"></v-col>
       <v-col cols="10">
         <div style="font-size: 130px; font-weight: bold; color: darkblue">
-          REALISATIONS
+          Réalisations
         </div>
       </v-col>
     </v-row>
@@ -12,9 +12,9 @@
 </template>
 
 <script>
-    export default {
-        name: "Realisations"
-    }
+export default {
+  name: 'Realisations'
+}
 </script>
 
 <style scoped>

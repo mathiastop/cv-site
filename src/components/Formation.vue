@@ -4,7 +4,7 @@
       <v-col cols="1"></v-col>
       <v-col cols="10">
         <div style="font-size: 130px; font-weight: bold; color: darkblue">
-          FORMATION
+          Formations
         </div>
         <v-list>
           <v-list-item>
@@ -35,7 +35,7 @@
     <v-col cols="1"></v-col>
     <v-col cols="10">
       <div style="font-size: 130px; font-weight: bold; color: darkblue">
-        FORMATION
+        Formations
       </div>
       <v-list>
         <v-list-item>

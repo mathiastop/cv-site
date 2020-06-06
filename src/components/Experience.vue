@@ -4,7 +4,7 @@
       <v-col cols="1"></v-col>
       <v-col cols="10">
         <div style="font-size: 130px; font-weight: bold; color: darkblue">
-          EXPERIENCE
+          Expériences
         </div>
         <v-list>
 
@@ -45,7 +45,7 @@
       <v-col cols="1"></v-col>
       <v-col cols="10">
         <div style="font-size: 130px; font-weight: bold; color: darkblue">
-          EXPERIENCE
+          Expériences
         </div>
         <v-list>
 

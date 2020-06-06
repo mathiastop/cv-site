@@ -56,7 +56,7 @@
         </v-list>
       </v-col>
     </v-row>
-    <v-row v-show="$vuetify.breakpoint.smAndUp">
+    <v-row v-show="$vuetify.breakpoint.smAndDown">
       <v-col cols="1"></v-col>
       <v-col cols="10">
         <div style="font-size: 130px; font-weight: bold; color: darkblue">

@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <p class="text-h1 blue--text text--darken-3 font-weight-bold">CONTACT</p>
+    <p class="text-h1 blue--text text--darken-4 font-weight-bold">CONTACT</p>
     <v-row>
       <v-col md="6">
         <v-form

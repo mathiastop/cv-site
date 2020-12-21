@@ -1,6 +1,6 @@
 <template>
     <v-container>
-      <p class="text-h1 blue--text text--darken-3 font-weight-bold">COMPETENCES</p>
+      <p class="text-h1 blue--text text--darken-4 font-weight-bold">COMPETENCES</p>
       <v-row>
         <v-col md="4">
           <v-list-group>

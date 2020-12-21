@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <p class="text-h1 blue--text text--darken-3 font-weight-bold">FORMATIONS</p>
+    <p class="text-h1 blue--text text--darken-4 font-weight-bold">FORMATIONS</p>
     <v-list>
       <v-list-item-content>
         <v-list-item-title class="text-h2 orange--text text--darken-1 font-weight-bold">Responsable dévelopement Web et Mobile</v-list-item-title>

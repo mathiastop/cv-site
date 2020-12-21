@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <p class="text-h1 blue--text text--darken-3 font-weight-bold">EXPERIENCES</p>
+    <p class="text-h1 blue--text text--darken-4 font-weight-bold">EXPERIENCES</p>
     <v-list-group>
       <template v-slot:activator>
         <v-list-item-title class="text-h2 orange--text text--darken-1 font-weight-bold">Développeur Web</v-list-item-title>
@@ -11,13 +11,13 @@
             Mo&Jo | Lille | Juillet 2019/Octobre 2019
           </v-list-item-title>
           <v-list-item-subtitle class="text-h4 black--text">
-            Migration de l’ensemble des projets sous la technologie <strong class="blue--text text--darken-3">Docker</strong>
+            Migration de l’ensemble des projets sous la technologie <strong class="blue--text text--darken-4">Docker</strong>
           </v-list-item-subtitle>
           <v-list-item-subtitle class="text-h4 black--text">
-            Réalisation de sites web en <strong class="blue--text text--darken-3">PHP</strong> avec le framework <strong class="blue--text text--darken-3">Symfony</strong>
+            Réalisation de sites web en <strong class="blue--text text--darken-4">PHP</strong> avec le framework <strong class="blue--text text--darken-4">Symfony</strong>
           </v-list-item-subtitle>
           <v-list-item-subtitle class="text-h4 black--text">
-            Réalisation d'une veille concernant l’intégration continue - <strong class="blue--text text--darken-3">PHPUnit</strong> et <strong class="blue--text text--darken-3">CircleCI</strong>
+            Réalisation d'une veille concernant l’intégration continue - <strong class="blue--text text--darken-4">PHPUnit</strong> et <strong class="blue--text text--darken-4">CircleCI</strong>
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -32,7 +32,7 @@
           LUC Judo | Lille | Juin 2020/Août 2020
         </v-list-item-title>
         <v-list-item-subtitle class="text-h4 black--text">
-          Réalisation d'un site en <strong class="blue--text text--darken-3">PHP/Symfony</strong> pour le back, et <strong class="blue--text text--darken-3">Boostrap</strong> pour le front
+          Réalisation d'un site en <strong class="blue--text text--darken-4">PHP/Symfony</strong> pour le back, et <strong class="blue--text text--darken-4">Boostrap</strong> pour le front
         </v-list-item-subtitle>
         <v-list-item-subtitle class="text-h4 black--text">
           <v-tooltip bottom>

@@ -5,9 +5,24 @@
       color="blue darken-4"
       dark
     >
-
+      <div>
+        <v-btn text x-large @click="$vuetify.goTo('#index')">
+          Index
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#experiences')">
+          Experiences
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#formations')">
+          Formations
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#competences')">
+          Compétences
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#contact')">
+          Contact
+        </v-btn>
+      </div>
       <v-spacer></v-spacer>
-
       <v-btn
         href="https://github.com/mathiastop"
         target="_blank"
@@ -39,23 +54,23 @@
       </v-alert>
     </v-main>
 
-    <v-main>
+    <v-main id="#index">
       <Main/>
     </v-main>
     <v-divider></v-divider>
-    <v-main>
+    <v-main id="experiences">
       <Experience/>
     </v-main>
     <v-divider></v-divider>
-    <v-main>
+    <v-main id="formations">
       <Formation/>
     </v-main>
     <v-divider></v-divider>
-    <v-main>
+    <v-main id="competences">
       <Competences/>
     </v-main>
     <v-divider></v-divider>
-    <v-main>
+    <v-main id="contact">
       <Contact/>
     </v-main>
   </v-app>

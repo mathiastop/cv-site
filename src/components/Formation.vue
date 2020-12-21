@@ -1,66 +1,21 @@
 <template>
   <v-container>
-    <v-row v-show="$vuetify.breakpoint.mdAndUp">
-      <v-col cols="1"></v-col>
-      <v-col cols="10">
-        <div style="font-size: 130px; font-weight: bold; color: darkblue">
-          Formations
-        </div>
-        <v-list>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title style="font-size: 70px; color: darkorange">
-                Expert en Technologie de l'Information
-              </v-list-item-title>
-              <v-list-item-subtitle style="font-size: 30px">
-                Epitech - Lille - 2023
-              </v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item two-line>
-            <v-list-item-content>
-              <v-list-item-title style="font-size: 70px; color: darkorange">
-                Baccalauréat STI2D
-              </v-list-item-title>
-              <v-list-item-subtitle style="font-size: 30px">
-                Lycée St Rémi - Roubaix - 2018
-              </v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-col>
-    </v-row>
-
-    <v-row v-show="$vuetify.breakpoint.smAndDown">
-    <v-col cols="1"></v-col>
-    <v-col cols="10">
-      <div style="font-size: 130px; font-weight: bold; color: darkblue">
-        Formations
-      </div>
-      <v-list>
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: 70px; color: darkorange">
-              Expert en Technologie de l'Information
-            </v-list-item-title>
-            <v-list-item-subtitle style="font-size: 30px">
-              Epitech - Lille - 2023
-            </v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-        <v-list-item two-line>
-          <v-list-item-content>
-            <v-list-item-title style="font-size: 70px; color: darkorange">
-              Baccalauréat STI2D
-            </v-list-item-title>
-            <v-list-item-subtitle style="font-size: 30px">
-              Lycée St Rémi - Roubaix - 2018
-            </v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-col>
-    </v-row>
+    <p class="text-h1 blue--text text--darken-3 font-weight-bold">FORMATIONS</p>
+    <v-list>
+      <v-list-item-content>
+        <v-list-item-title class="text-h2 orange--text text--darken-1 font-weight-bold">Responsable dévelopement Web et Mobile</v-list-item-title>
+        <v-list-item-subtitle class="text-h3 blue-grey--text text--darken-1">Epitech | Lille | Depuis septembre 2020</v-list-item-subtitle>
+      </v-list-item-content>
+      <v-list-item-content>
+        <v-list-item-title class="text-h2 orange--text text--darken-1 font-weight-bold">Expert en Technologie de l'Information</v-list-item-title>
+        <v-list-item-subtitle class="text-h3 blue-grey--text text--darken-1">Epitech | Lille | Septembre 2018 - Juin 2020</v-list-item-subtitle>
+      </v-list-item-content>
+      <v-list-item-content>
+        <v-list-item-title class="text-h2 orange--text text--darken-1 font-weight-bold">Baccalauréat STI2D</v-list-item-title>
+        <v-list-item-subtitle class="text-h3 blue-grey--text text--darken-1">Lycée St Rémi | Roubaix | 2018</v-list-item-subtitle>
+      </v-list-item-content>
+    </v-list>
+<!--    <p class="text-h4">Etudiant en troisième année au sein d'Epitech, je suis à la recherche d'une alternance pour janvier 2021</p>-->
   </v-container>
 </template>
 

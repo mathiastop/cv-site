@@ -1,52 +1,107 @@
 <template>
     <v-container>
-      <v-row v-show="$vuetify.breakpoint.mdAndUp">
-        <v-col cols="1"></v-col>
-        <v-col cols="10">
-          <div style="font-size: 130px; font-weight: bold; color: darkblue">
-            Compétences
-          </div>
-          <v-list>
-            <v-list-item>
-              <v-icon size="100" class="change-color">mdi-docker</v-icon>
-              <v-icon size="100" class="change-color">mdi-kubernetes</v-icon>
-              <v-divider vertical/>
-              <v-icon size="100" class="change-color">mdi-language-php</v-icon>
-              <v-icon size="100" class="change-color">mdi-symfony</v-icon>
-              <v-divider vertical/>
-              <v-icon size="100" class="change-color">mdi-vuejs</v-icon>
-              <v-icon size="100" class="change-color">mdi-vuetify</v-icon>
-              <v-divider vertical/>
-              <v-icon size="100" class="change-color">mdi-language-c</v-icon>
-              <v-icon size="100" class="change-color">mdi-language-cpp</v-icon>
-              <v-icon size="100" class="change-color">mdi-language-python</v-icon>
-            </v-list-item>
-          </v-list>
+      <p class="text-h1 blue--text text--darken-3 font-weight-bold">COMPETENCES</p>
+      <v-row>
+        <v-col md="4">
+          <v-list-group>
+            <template v-slot:activator>
+              <v-hover v-slot="{hover}">
+                <v-list-item-title>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-php</v-icon>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-symfony</v-icon>
+                </v-list-item-title>
+              </v-hover>
+            </template>
+            <v-list-item-content>
+              <p class="text-h4 black--text">
+                Réalisation de plusieurs sites web
+              </p>
+            </v-list-item-content>
+          </v-list-group>
         </v-col>
-      </v-row>
-
-      <v-row v-show="$vuetify.breakpoint.smAndDown">
-        <v-col cols="1"></v-col>
-        <v-col cols="10">
-          <div style="font-size: 130px; font-weight: bold; color: darkblue">
-            Compétences
-          </div>
-          <v-list>
-            <v-list-item>
-              <v-icon size="100" class="change-color">mdi-docker</v-icon>
-              <v-icon size="100" class="change-color">mdi-kubernetes</v-icon>
-              <v-divider vertical/>
-              <v-icon size="100" class="change-color">mdi-language-php</v-icon>
-              <v-icon size="100" class="change-color">mdi-symfony</v-icon>
-              <v-divider vertical/>
-              <v-icon size="100" class="change-color">mdi-vuejs</v-icon>
-              <v-icon size="100" class="change-color">mdi-vuetify</v-icon>
-              <v-divider vertical/>
-              <v-icon size="100" class="change-color">mdi-language-c</v-icon>
-              <v-icon size="100" class="change-color">mdi-language-cpp</v-icon>
-              <v-icon size="100" class="change-color">mdi-language-python</v-icon>
-            </v-list-item>
-          </v-list>
+        <v-col md="4">
+          <v-list-group>
+            <template v-slot:activator>
+              <v-hover v-slot="{hover}">
+                <v-list-item-title>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-docker</v-icon>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-kubernetes</v-icon>
+                </v-list-item-title>
+              </v-hover>
+            </template>
+            <v-list-item-content>
+              <p class="text-h4 black--text">
+                Préparation de fichier de configuration pour le déploiment de différentes applications web
+              </p>
+            </v-list-item-content>
+          </v-list-group>
+        </v-col>
+        <v-col md="4">
+          <v-list-group>
+            <template v-slot:activator>
+              <v-hover v-slot="{hover}">
+                <v-list-item-title>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-bootstrap</v-icon>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-javascript</v-icon>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-jquery</v-icon>
+                </v-list-item-title>
+              </v-hover>
+            </template>
+            <v-list-item-content>
+              <p class="text-h4 black--text">
+                Réalisation d'un JobBoard
+              </p>
+            </v-list-item-content>
+          </v-list-group>
+        </v-col>
+        <v-col md="4">
+          <v-list-group>
+            <template v-slot:activator>
+              <v-hover v-slot="{hover}">
+                <v-list-item-title>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-ansible</v-icon>
+                </v-list-item-title>
+              </v-hover>
+            </template>
+            <v-list-item-content>
+              <p class="text-h4 black--text">
+                Automatisation de tâches complexes
+              </p>
+            </v-list-item-content>
+          </v-list-group>
+        </v-col>
+        <v-col md="4">
+          <v-list-group>
+            <template v-slot:activator>
+              <v-hover v-slot="{hover}">
+                <v-list-item-title>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-c</v-icon>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-cpp</v-icon>
+                </v-list-item-title>
+              </v-hover>
+            </template>
+            <v-list-item-content>
+              <p class="text-h4 black--text">
+                Réalisations de plusieurs projets au sein d'Epitech
+              </p>
+            </v-list-item-content>
+          </v-list-group>
+        </v-col>
+        <v-col md="4">
+          <v-list-group>
+            <template v-slot:activator>
+              <v-hover v-slot="{hover}">
+                <v-list-item-title>
+                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-java</v-icon>
+                </v-list-item-title>
+              </v-hover>
+            </template>
+            <v-list-item-content>
+              <p class="text-h4 black--text">
+                Réalisation d'un Dashboard
+              </p>
+            </v-list-item-content>
+          </v-list-group>
         </v-col>
       </v-row>
     </v-container>
@@ -59,7 +114,5 @@ export default {
 </script>
 
 <style scoped>
-.change-color:hover {
-  color: darkorange;
-}
+
 </style>

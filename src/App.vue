@@ -23,6 +23,14 @@
       >
         <v-icon x-large>mdi-linkedin</v-icon>
       </v-btn>
+      <v-divider vertical inset></v-divider>
+      <v-btn
+        href="mailto:mathiastop@epitech.eu"
+        target="_blank"
+        text
+      >
+        <v-icon x-large>mdi-email-edit</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-main>
@@ -48,7 +56,7 @@
     </v-main>
     <v-divider></v-divider>
     <v-main>
-      <Realisations/>
+      <Contact/>
     </v-main>
   </v-app>
 </template>
@@ -59,7 +67,7 @@ import Main from './components/Main.vue'
 import Experience from './components/Experience.vue'
 import Formation from './components/Formation.vue'
 import Competences from './components/Competences.vue'
-import Realisations from './components/Realisations.vue'
+import Contact from './components/Contact.vue'
 
 export default Vue.extend({
   name: 'App',
@@ -69,7 +77,7 @@ export default Vue.extend({
     Experience,
     Formation,
     Competences,
-    Realisations
+    Contact
   },
 
   data: () => ({

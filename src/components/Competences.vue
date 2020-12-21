@@ -7,8 +7,10 @@
             <template v-slot:activator>
               <v-hover v-slot="{hover}">
                 <v-list-item-title>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-php</v-icon>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-symfony</v-icon>
+                  <v-layout justify-center>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-php</v-icon>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-symfony</v-icon>
+                  </v-layout>
                 </v-list-item-title>
               </v-hover>
             </template>
@@ -24,8 +26,10 @@
             <template v-slot:activator>
               <v-hover v-slot="{hover}">
                 <v-list-item-title>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-docker</v-icon>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-kubernetes</v-icon>
+                  <v-layout justify-center>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-docker</v-icon>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-kubernetes</v-icon>
+                  </v-layout>
                 </v-list-item-title>
               </v-hover>
             </template>
@@ -41,9 +45,11 @@
             <template v-slot:activator>
               <v-hover v-slot="{hover}">
                 <v-list-item-title>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-bootstrap</v-icon>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-javascript</v-icon>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-jquery</v-icon>
+                  <v-layout justify-center>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-bootstrap</v-icon>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-javascript</v-icon>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-jquery</v-icon>
+                  </v-layout>
                 </v-list-item-title>
               </v-hover>
             </template>
@@ -59,7 +65,9 @@
             <template v-slot:activator>
               <v-hover v-slot="{hover}">
                 <v-list-item-title>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-ansible</v-icon>
+                  <v-layout justify-center>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-ansible</v-icon>
+                  </v-layout>
                 </v-list-item-title>
               </v-hover>
             </template>
@@ -75,8 +83,10 @@
             <template v-slot:activator>
               <v-hover v-slot="{hover}">
                 <v-list-item-title>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-c</v-icon>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-cpp</v-icon>
+                  <v-layout justify-center>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-c</v-icon>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-cpp</v-icon>
+                  </v-layout>
                 </v-list-item-title>
               </v-hover>
             </template>
@@ -92,7 +102,9 @@
             <template v-slot:activator>
               <v-hover v-slot="{hover}">
                 <v-list-item-title>
-                  <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-java</v-icon>
+                  <v-layout justify-center>
+                    <v-icon size="100" :color="hover ? 'orange' : ''">mdi-language-java</v-icon>
+                  </v-layout>
                 </v-list-item-title>
               </v-hover>
             </template>

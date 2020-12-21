@@ -8,7 +8,7 @@
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h3 blue-grey--text text--darken-1">
-            Mo&Jo - Lille - Juillet 2019/Octobre 2019
+            Mo&Jo | Lille | Juillet 2019/Octobre 2019
           </v-list-item-title>
           <v-list-item-subtitle class="text-h4 black--text">
             Migration de l’ensemble des projets sous la technologie <strong class="blue--text text--darken-3">Docker</strong>
@@ -29,7 +29,7 @@
     <v-list-item>
       <v-list-item-content>
         <v-list-item-title class="text-h3 blue-grey--text text--darken-1">
-          LUC Judo - Lille - Juin 2020/Août 2020
+          LUC Judo | Lille | Juin 2020/Août 2020
         </v-list-item-title>
         <v-list-item-subtitle class="text-h4 black--text">
           Réalisation d'un site en <strong class="blue--text text--darken-3">PHP/Symfony</strong> pour le back, et <strong class="blue--text text--darken-3">Boostrap</strong> pour le front
@@ -59,7 +59,5 @@ export default {
 </script>
 
 <style scoped>
-.change-color:hover {
-  color: darkorange;
-}
+
 </style>

@@ -2,19 +2,9 @@
   <v-app>
     <v-app-bar
       app
-      color="#17358B"
+      color="blue darken-4"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Mathias Top"
-          class="shrink mr-2"
-          contain
-          src="./assets/mathias.top.png"
-          transition="scale-transition"
-          width="40"
-        />
-      </div>
 
       <v-spacer></v-spacer>
 
@@ -35,31 +25,31 @@
       </v-btn>
     </v-app-bar>
 
-    <v-content>
+    <v-main>
       <v-alert type="warning">
         Ce site est en construction.
       </v-alert>
-    </v-content>
+    </v-main>
 
-    <v-content>
+    <v-main>
       <Main/>
-    </v-content>
+    </v-main>
     <v-divider></v-divider>
-    <v-content>
+    <v-main>
       <Experience/>
-    </v-content>
+    </v-main>
     <v-divider></v-divider>
-    <v-content>
+    <v-main>
       <Formation/>
-    </v-content>
+    </v-main>
     <v-divider></v-divider>
-    <v-content>
+    <v-main>
       <Competences/>
-    </v-content>
+    </v-main>
     <v-divider></v-divider>
-    <v-content>
+    <v-main>
       <Realisations/>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 

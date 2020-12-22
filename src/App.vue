@@ -54,7 +54,7 @@
       </v-alert>
     </v-main>
 
-    <v-main id="#index">
+    <v-main id="index">
       <Main/>
     </v-main>
     <v-divider></v-divider>

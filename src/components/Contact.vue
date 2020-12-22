@@ -1,6 +1,12 @@
 <template>
   <v-container>
     <p class="text-h1 blue--text text--darken-4 font-weight-bold">CONTACT</p>
+    <v-alert type="success" :value="sendMail" dismissible transition="slide-y-transition" @click="sendMail = false">
+      Votre message a été envoyé.
+    </v-alert>
+    <v-alert type="error" :value="errorMail" dismissible transition="slide-y-transition" @click="errorMail = false">
+      Une erreur est survenue lors de l'envoi de votre message.
+    </v-alert>
     <v-row>
       <v-col md="6">
         <v-form
@@ -145,6 +151,8 @@ export default {
   name: 'Contact',
 
   data: () => ({
+    sendMail: false,
+    errorMail: false,
     valid: true,
     name: '',
     nameRules: [
@@ -177,7 +185,7 @@ export default {
       const subject = this.$refs.subject.value
       const message = this.$refs.message.value
       try {
-        emailjs.sendForm('service_ch0km4a', 'template_7yhev7r', e.target,
+        emailjs.sendForm('service_ch0km4a', 'template_7yhev7r', e,
           'user_EkUqCpfhOPkjZ3jWJez0h', {
             formName: name,
             formEmail: email,
@@ -185,8 +193,16 @@ export default {
             formMessage: message
           })
         this.$refs.form.reset()
+        this.sendMail = true
+        window.setTimeout(() => {
+          this.sendMail = false
+        }, 5000)
       } catch (error) {
         console.log('ERROR: ' + error)
+        this.errorMail = true
+        window.setTimeout(() => {
+          this.errorMail = false
+        }, 5000)
       }
     },
     reset () {

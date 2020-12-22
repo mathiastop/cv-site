@@ -7,9 +7,11 @@
           ref="form"
           v-model="valid"
           lazy-validation
+          @submit.prevent="sendEmail"
         >
           <v-text-field
             ref="name"
+            name="formName"
             v-model="name"
             :counter="50"
             :rules="nameRules"
@@ -18,6 +20,7 @@
           ></v-text-field>
           <v-text-field
             ref="email"
+            name="formEmail"
             v-model="email"
             :rules="emailRules"
             label="E-mail *"
@@ -25,6 +28,7 @@
           ></v-text-field>
           <v-text-field
             ref="subject"
+            name="formSubject"
             v-model="subject"
             :rules="subjectRules"
             label="Sujet *"
@@ -32,6 +36,7 @@
           ></v-text-field>
           <v-textarea
             ref="message"
+            name="formMessage"
             v-model="message"
             :counter="500"
             :rules="messageRules"
@@ -43,6 +48,8 @@
             color="blue darken-3 white--text"
             class="mr-4"
             @click="validate"
+            type="submit"
+            value="Send"
           >
             Valider
           </v-btn>
@@ -64,7 +71,7 @@
       <v-col md="6">
         <v-row justify="center">
           <v-col md="6">
-            <v-tooltip bottom>
+            <v-tooltip top>
               <template v-slot:activator="{on, attrs}">
                 <span v-bind="attrs" v-on="on">
                   <v-layout justify-center>
@@ -80,7 +87,7 @@
             </v-tooltip>
           </v-col>
           <v-col md="6">
-            <v-tooltip bottom>
+            <v-tooltip top>
               <template v-slot:activator="{on, attrs}">
                 <span v-bind="attrs" v-on="on">
                   <v-layout justify-center>
@@ -108,9 +115,24 @@
                   </v-layout>
                 </span>
               </template>
-              <span>Me contacter par mail</span>
+              <span>mathias.top@epitech.eu</span>
             </v-tooltip>
-          </v-col>
+          </v-col><v-col md="6">
+          <v-tooltip bottom>
+            <template v-slot:activator="{on, attrs}">
+                <span v-bind="attrs" v-on="on">
+                  <v-layout justify-center>
+                    <v-hover v-slot="{hover}">
+                      <a href="tel:06.05.26.20.77" style="text-decoration:none;">
+                        <v-icon size="200" :color="hover ? 'blue-grey darken-1' : ''">mdi-phone-ring</v-icon>
+                      </a>
+                    </v-hover>
+                  </v-layout>
+                </span>
+            </template>
+            <span>06.05.26.20.77</span>
+          </v-tooltip>
+        </v-col>
         </v-row>
       </v-col>
     </v-row>
@@ -118,6 +140,7 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com'
 export default {
   name: 'Contact',
 
@@ -147,10 +170,24 @@ export default {
   methods: {
     validate () {
       this.$refs.form.validate()
-      // const name = this.$refs.name.value
-      // const email = this.$refs.email.value
-      // const subject = this.$refs.subject.value
-      // const message = this.$refs.message.value
+    },
+    sendEmail (e) {
+      const name = this.$refs.name.value
+      const email = this.$refs.email.value
+      const subject = this.$refs.subject.value
+      const message = this.$refs.message.value
+      try {
+        emailjs.sendForm('service_ch0km4a', 'template_7yhev7r', e.target,
+          'user_EkUqCpfhOPkjZ3jWJez0h', {
+            formName: name,
+            formEmail: email,
+            formSubject: subject,
+            formMessage: message
+          })
+        this.$refs.form.reset()
+      } catch (error) {
+        console.log('ERROR: ' + error)
+      }
     },
     reset () {
       this.$refs.form.reset()

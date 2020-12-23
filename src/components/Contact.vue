@@ -3,7 +3,7 @@
     <p class="
       text-md-h1
       text-sm-h2
-      text-h3
+      text-h4
       blue--text text--darken-4 font-weight-bold">
       CONTACT
     </p>
@@ -83,7 +83,7 @@
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
                       <a href="https://github.com/mathiastop" target="_blank" class="text-decoration-none">
-                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 130 : 200" :color="hover ? 'black' : ''">mdi-github</v-icon>
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'black' : ''">mdi-github</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>
@@ -99,7 +99,7 @@
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
                       <a href="https://www.linkedin.com/in/mathias-top-93254a174/" target="_blank" class="text-decoration-none">
-                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 130 : 200" :color="hover ? 'blue darken-3' : ''">mdi-linkedin</v-icon>
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'blue darken-3' : ''">mdi-linkedin</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>
@@ -115,7 +115,7 @@
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
                       <a href="mailto:mathiastop@epitech.eu" class="text-decoration-none">
-                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 130 : 200" :color="hover ? 'orange' : ''">mdi-email-edit</v-icon>
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'orange' : ''">mdi-email-edit</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>
@@ -131,7 +131,7 @@
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
                       <a href="tel:06.05.26.20.77" class="text-decoration-none">
-                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 130 : 200" :color="hover ? 'blue-grey darken-1' : ''">mdi-phone-ring</v-icon>
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'blue-grey darken-1' : ''">mdi-phone-ring</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>

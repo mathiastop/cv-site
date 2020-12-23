@@ -3,7 +3,7 @@
     <p class="
       text-md-h1
       text-sm-h2
-      text-h3
+      text-h4
       blue--text text--darken-4 font-weight-bold">
       FORMATIONS
     </p>

@@ -1,6 +1,12 @@
 <template>
   <v-container>
-    <p class="text-h1 blue--text text--darken-4 font-weight-bold">CONTACT</p>
+    <p class="
+      text-md-h1
+      text-sm-h2
+      text-h3
+      blue--text text--darken-4 font-weight-bold">
+      CONTACT
+    </p>
     <v-alert type="success" :value="sendMail" dismissible transition="slide-y-transition" @click="sendMail = false">
       Votre message a été envoyé.
     </v-alert>
@@ -64,13 +70,7 @@
             class="mr-4"
             @click="reset"
           >
-            Réinitialiser formulaire
-          </v-btn>
-          <v-btn
-            color="warning"
-            @click="resetValidation"
-          >
-            Réinitialiser validations
+            Effacer formulaire
           </v-btn>
         </v-form>
       </v-col>
@@ -82,8 +82,8 @@
                 <span v-bind="attrs" v-on="on">
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
-                      <a href="https://github.com/mathiastop" target="_blank" style="text-decoration:none;">
-                        <v-icon size="200" :color="hover ? 'black' : ''">mdi-github</v-icon>
+                      <a href="https://github.com/mathiastop" target="_blank" class="text-decoration-none">
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'black' : ''">mdi-github</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>
@@ -98,8 +98,8 @@
                 <span v-bind="attrs" v-on="on">
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
-                      <a href="https://www.linkedin.com/in/mathias-top-93254a174/" target="_blank" style="text-decoration:none;">
-                        <v-icon size="200" :color="hover ? 'blue darken-3' : ''">mdi-linkedin</v-icon>
+                      <a href="https://www.linkedin.com/in/mathias-top-93254a174/" target="_blank" class="text-decoration-none">
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'blue darken-3' : ''">mdi-linkedin</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>
@@ -109,13 +109,13 @@
             </v-tooltip>
           </v-col>
           <v-col md="6">
-            <v-tooltip bottom>
+            <v-tooltip top>
               <template v-slot:activator="{on, attrs}">
                 <span v-bind="attrs" v-on="on">
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
-                      <a href="mailto:mathiastop@epitech.eu" style="text-decoration:none;">
-                        <v-icon size="200" :color="hover ? 'orange' : ''">mdi-email-edit</v-icon>
+                      <a href="mailto:mathiastop@epitech.eu" class="text-decoration-none">
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'orange' : ''">mdi-email-edit</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>
@@ -124,13 +124,13 @@
               <span>mathias.top@epitech.eu</span>
             </v-tooltip>
           </v-col><v-col md="6">
-          <v-tooltip bottom>
+          <v-tooltip top>
             <template v-slot:activator="{on, attrs}">
                 <span v-bind="attrs" v-on="on">
                   <v-layout justify-center>
                     <v-hover v-slot="{hover}">
-                      <a href="tel:06.05.26.20.77" style="text-decoration:none;">
-                        <v-icon size="200" :color="hover ? 'blue-grey darken-1' : ''">mdi-phone-ring</v-icon>
+                      <a href="tel:06.05.26.20.77" class="text-decoration-none">
+                        <v-icon :size="$vuetify.breakpoint.smAndDown ? 160 : 200" :color="hover ? 'blue-grey darken-1' : ''">mdi-phone-ring</v-icon>
                       </a>
                     </v-hover>
                   </v-layout>
@@ -185,7 +185,7 @@ export default {
       const subject = this.$refs.subject.value
       const message = this.$refs.message.value
       try {
-        emailjs.sendForm('service_ch0km4a', 'template_7yhev7r', e,
+        emailjs.sendForm('service_ch0km4a', 'template_7yhev7r', e.target,
           'user_EkUqCpfhOPkjZ3jWJez0h', {
             formName: name,
             formEmail: email,
@@ -207,9 +207,6 @@ export default {
     },
     reset () {
       this.$refs.form.reset()
-    },
-    resetValidation () {
-      this.$refs.form.resetValidation()
     }
   }
 }

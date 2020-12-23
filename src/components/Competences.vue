@@ -1,6 +1,12 @@
 <template>
     <v-container>
-      <p class="text-h1 blue--text text--darken-4 font-weight-bold">COMPETENCES</p>
+      <p class="
+        text-md-h1
+        text-sm-h2
+        text-h3
+        blue--text text--darken-4 font-weight-bold">
+        COMPETENCES
+      </p>
       <v-row>
         <v-col md="4">
           <v-list-group>
@@ -15,7 +21,11 @@
               </v-hover>
             </template>
             <v-list-item-content>
-              <p class="text-h4 black--text">
+              <p class="
+                text-md-h4
+                text-sm-h5
+                text-h6
+                black--text">
                 Réalisation de plusieurs sites web
               </p>
             </v-list-item-content>
@@ -34,7 +44,11 @@
               </v-hover>
             </template>
             <v-list-item-content>
-              <p class="text-h4 black--text">
+              <p class="
+                text-md-h4
+                text-sm-h5
+                text-h6
+                black--text">
                 Préparation de fichier de configuration pour le déploiment de différentes applications web
               </p>
             </v-list-item-content>
@@ -54,7 +68,11 @@
               </v-hover>
             </template>
             <v-list-item-content>
-              <p class="text-h4 black--text">
+              <p class="
+                text-md-h4
+                text-sm-h5
+                text-h6
+                black--text">
                 Réalisation d'un JobBoard
               </p>
             </v-list-item-content>
@@ -72,7 +90,11 @@
               </v-hover>
             </template>
             <v-list-item-content>
-              <p class="text-h4 black--text">
+              <p class="
+                text-md-h4
+                text-sm-h5
+                text-h6
+                black--text">
                 Automatisation de tâches complexes
               </p>
             </v-list-item-content>
@@ -91,7 +113,11 @@
               </v-hover>
             </template>
             <v-list-item-content>
-              <p class="text-h4 black--text">
+              <p class="
+                text-md-h4
+                text-sm-h5
+                text-h6
+                black--text">
                 Réalisations de plusieurs projets au sein d'Epitech
               </p>
             </v-list-item-content>
@@ -109,7 +135,11 @@
               </v-hover>
             </template>
             <v-list-item-content>
-              <p class="text-h4 black--text">
+              <p class="
+                text-md-h4
+                text-sm-h5
+                text-h6
+                black--text">
                 Réalisation d'un Dashboard
               </p>
             </v-list-item-content>

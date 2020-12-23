@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <v-app-bar
+      class="d-md-block d-none"
       app
       color="blue darken-4"
       dark
@@ -28,7 +29,7 @@
         target="_blank"
         text
       >
-        <v-icon x-large>mdi-github</v-icon>
+        <v-icon large>mdi-github</v-icon>
       </v-btn>
       <v-divider vertical inset></v-divider>
       <v-btn
@@ -36,7 +37,7 @@
         target="_blank"
         text
       >
-        <v-icon x-large>mdi-linkedin</v-icon>
+        <v-icon large>mdi-linkedin</v-icon>
       </v-btn>
       <v-divider vertical inset></v-divider>
       <v-btn
@@ -44,16 +45,90 @@
         target="_blank"
         text
       >
-        <v-icon x-large>mdi-email-edit</v-icon>
+        <v-icon large>mdi-email-edit</v-icon>
+      </v-btn>
+      <v-divider vertical inset></v-divider>
+      <v-btn
+        href="tel:06.05.26.20.77"
+        target="_blank"
+        text
+      >
+        <v-icon large>mdi-phone-ring</v-icon>
       </v-btn>
     </v-app-bar>
-
-    <v-main>
-      <v-alert type="warning">
-        Ce site est en construction.
-      </v-alert>
-    </v-main>
-
+    <v-app-bar
+      class="d-md-none d-block"
+      app
+      color="blue darken-4"
+      dark
+    >
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+      <v-spacer></v-spacer>
+      <v-btn
+        href="https://github.com/mathiastop"
+        target="_blank"
+        text
+      >
+        <v-icon large>mdi-github</v-icon>
+      </v-btn>
+      <v-divider vertical inset></v-divider>
+      <v-btn
+        href="https://www.linkedin.com/in/mathias-top-93254a174/"
+        target="_blank"
+        text
+      >
+        <v-icon large>mdi-linkedin</v-icon>
+      </v-btn>
+      <v-divider vertical inset></v-divider>
+      <v-btn
+        href="mailto:mathiastop@epitech.eu"
+        target="_blank"
+        text
+      >
+        <v-icon large>mdi-email-edit</v-icon>
+      </v-btn>
+      <v-divider vertical inset></v-divider>
+      <v-btn
+        href="tel:06.05.26.20.77"
+        target="_blank"
+        text
+      >
+        <v-icon large>mdi-phone-ring</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <v-navigation-drawer
+      v-model="drawer"
+      :class="$vuetify.breakpoint.mdAndUp ? 'd-none' : 'd-block'"
+      color="blue darken-4"
+      dark
+      app
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+        >
+          <v-list-item>
+            <v-list-item-title @click="$vuetify.goTo('#index'), drawer = !drawer">Index</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$vuetify.goTo('#experiences'), drawer = !drawer">Experiences</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$vuetify.goTo('#formations'), drawer = !drawer">Formations</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$vuetify.goTo('#competences'), drawer = !drawer">Compétences</v-list-item-title>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-title @click="$vuetify.goTo('#contact'), drawer = !drawer">Contact</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+    <br/>
     <v-main id="index">
       <Main/>
     </v-main>
@@ -77,7 +152,7 @@
       <v-row
         justify="center"
       >
-        <div>
+        <div class="d-sm-block d-none">
           <v-btn text x-large @click="$vuetify.goTo('#index')">
             Index
           </v-btn>
@@ -125,7 +200,8 @@ export default Vue.extend({
   },
 
   data: () => ({
-    //
+    drawer: false,
+    group: null
   })
 })
 </script>

@@ -1,40 +1,102 @@
 <template>
   <v-container>
-    <p class="text-h1 blue--text text--darken-4 font-weight-bold">EXPERIENCES</p>
+    <p class="
+      text-md-h1
+      text-sm-h2
+      text-h3
+      blue--text text--darken-4 font-weight-bold">
+      EXPERIENCES
+    </p>
     <v-list-group>
       <template v-slot:activator>
-        <v-list-item-title class="text-h2 orange--text text--darken-1 font-weight-bold">Développeur Web</v-list-item-title>
+        <v-list-item-title class="text-wrap
+          text-md-h2
+          text-sm-h3
+          text-h4
+          orange--text text--darken-1 font-weight-bold">
+          Développeur Web
+        </v-list-item-title>
       </template>
       <v-list-item>
         <v-list-item-content>
-          <v-list-item-title class="text-h3 blue-grey--text text--darken-1">
+          <v-list-item-title class="text-wrap
+            text-md-h3
+            text-sm-h4
+            text-h5
+            blue-grey--text text--darken-1">
             Mo&Jo | Lille | Juillet 2019/Octobre 2019
           </v-list-item-title>
-          <v-list-item-subtitle class="text-h4 black--text">
-            Migration de l’ensemble des projets sous la technologie <strong class="blue--text text--darken-4">Docker</strong>
+          <v-list-item-subtitle class="text-wrap
+            text-md-h4
+            text-sm-h5
+            text-h6
+            black--text">
+            <ul>
+              <li>
+                Migration de l’ensemble des projets sous la technologie <strong class="blue--text text--darken-4">Docker</strong>
+              </li>
+            </ul>
           </v-list-item-subtitle>
-          <v-list-item-subtitle class="text-h4 black--text">
-            Réalisation de sites web en <strong class="blue--text text--darken-4">PHP</strong> avec le framework <strong class="blue--text text--darken-4">Symfony</strong>
+          <v-list-item-subtitle class="text-wrap
+            text-md-h4
+            text-sm-h5
+            text-h6
+            black--text">
+            <ul>
+              <li>
+                Réalisation de sites web en <strong class="blue--text text--darken-4">PHP</strong> avec le framework <strong class="blue--text text--darken-4">Symfony</strong>
+              </li>
+            </ul>
           </v-list-item-subtitle>
-          <v-list-item-subtitle class="text-h4 black--text">
-            Réalisation d'une veille concernant l’intégration continue - <strong class="blue--text text--darken-4">PHPUnit</strong> et <strong class="blue--text text--darken-4">CircleCI</strong>
+          <v-list-item-subtitle class="text-wrap
+            text-md-h4
+            text-sm-h5
+            text-h6
+            black--text">
+            <ul>
+              <li>
+                Réalisation d'une veille concernant l’intégration continue - <strong class="blue--text text--darken-4">PHPUnit</strong> et <strong class="blue--text text--darken-4">CircleCI</strong>
+              </li>
+            </ul>
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
     </v-list-group>
     <v-list-group>
     <template v-slot:activator>
-      <v-list-item-title class="text-h2 orange--text text--darken-1 font-weight-bold">Chef de projet</v-list-item-title>
+      <v-list-item-title class="text-wrap
+        text-md-h2
+        text-sm-h3
+        text-h4
+        orange--text text--darken-1 font-weight-bold">
+        Chef de projet
+      </v-list-item-title>
     </template>
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="text-h3 blue-grey--text text--darken-1">
+        <v-list-item-title class="text-wrap
+          text-md-h3
+          text-sm-h4
+          text-h5
+          blue-grey--text text--darken-1">
           LUC Judo | Lille | Juin 2020/Août 2020
         </v-list-item-title>
-        <v-list-item-subtitle class="text-h4 black--text">
-          Réalisation d'un site en <strong class="blue--text text--darken-4">PHP/Symfony</strong> pour le back, et <strong class="blue--text text--darken-4">Boostrap</strong> pour le front
+        <v-list-item-subtitle class="text-wrap
+            text-md-h4
+            text-sm-h5
+            text-h6
+            black--text">
+          <ul>
+            <li>
+              Réalisation d'un site en <strong class="blue--text text--darken-4">PHP/Symfony</strong> pour le back, et <strong class="blue--text text--darken-4">Boostrap</strong> pour le front
+            </li>
+          </ul>
         </v-list-item-subtitle>
-        <v-list-item-subtitle class="text-h4 black--text">
+        <v-list-item-subtitle class="
+            text-md-h4
+            text-sm-h5
+            text-h6
+            black--text">
           <v-tooltip bottom>
             <template v-slot:activator="{on, attrs}">
               <span v-bind="attrs" v-on="on">

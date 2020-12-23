@@ -128,7 +128,11 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <br/>
+    <v-main>
+      <v-alert type="warning">
+        Ce site est en construction.
+      </v-alert>
+    </v-main>
     <v-main id="index">
       <Main/>
     </v-main>

@@ -73,6 +73,35 @@
     <v-main id="contact">
       <Contact/>
     </v-main>
+    <v-footer color="blue darken-4" dark padless>
+      <v-row
+        justify="center"
+      >
+        <div>
+          <v-btn text x-large @click="$vuetify.goTo('#index')">
+            Index
+          </v-btn>
+          <v-btn text x-large @click="$vuetify.goTo('#experiences')">
+            Experiences
+          </v-btn>
+          <v-btn text x-large @click="$vuetify.goTo('#formations')">
+            Formations
+          </v-btn>
+          <v-btn text x-large @click="$vuetify.goTo('#competences')">
+            Compétences
+          </v-btn>
+          <v-btn text x-large @click="$vuetify.goTo('#contact')">
+            Contact
+          </v-btn>
+        </div>
+        <v-col
+          class="text-center"
+          cols="12"
+        >
+          {{ new Date().getFullYear() }} — <strong>© Mathias Top</strong>
+        </v-col>
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 

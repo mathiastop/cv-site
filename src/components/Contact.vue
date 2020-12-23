@@ -58,7 +58,7 @@
           <v-btn
             :disabled="!valid"
             color="blue darken-3 white--text"
-            class="mr-4"
+            class="mr-2 mt-2"
             @click="validate"
             type="submit"
             value="Send"
@@ -67,7 +67,7 @@
           </v-btn>
           <v-btn
             color="error"
-            class="mr-4"
+            class="mr-4 mt-2"
             @click="reset"
           >
             Effacer formulaire

@@ -128,13 +128,14 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <v-main>
-      <v-container>
-        <v-alert type="warning">
-          Ce site est en construction.
-        </v-alert>
-      </v-container>
-    </v-main>
+<!--    <v-main>-->
+<!--      <v-container>-->
+<!--        <v-alert type="warning">-->
+<!--          Ce site est en construction.-->
+<!--        </v-alert>-->
+<!--      </v-container>-->
+<!--    </v-main>-->
+    <br/>
     <v-main id="index">
       <Main/>
     </v-main>
@@ -172,9 +173,17 @@
           Contact
         </v-btn>
       </div>
-      <p>
-        {{ new Date().getFullYear() }} — <strong>© Mathias Top</strong>
-      </p>
+      <v-card
+        flat
+        tile
+        width="100%"
+        color="blue darken-4"
+        class="text-center"
+      >
+        <v-card-text>
+          {{ new Date().getFullYear() }} — <strong>© Mathias Top</strong>
+        </v-card-text>
+      </v-card>
     </v-footer>
   </v-app>
 </template>

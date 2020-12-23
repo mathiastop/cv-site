@@ -129,9 +129,11 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <v-alert type="warning">
-        Ce site est en construction.
-      </v-alert>
+      <v-container>
+        <v-alert type="warning">
+          Ce site est en construction.
+        </v-alert>
+      </v-container>
     </v-main>
     <v-main id="index">
       <Main/>
@@ -152,34 +154,27 @@
     <v-main id="contact">
       <Contact/>
     </v-main>
-    <v-footer color="blue darken-4" dark padless>
-      <v-row
-        justify="center"
-      >
-        <div class="d-sm-block d-none">
-          <v-btn text x-large @click="$vuetify.goTo('#index')">
-            Index
-          </v-btn>
-          <v-btn text x-large @click="$vuetify.goTo('#experiences')">
-            Experiences
-          </v-btn>
-          <v-btn text x-large @click="$vuetify.goTo('#formations')">
-            Formations
-          </v-btn>
-          <v-btn text x-large @click="$vuetify.goTo('#competences')">
-            Compétences
-          </v-btn>
-          <v-btn text x-large @click="$vuetify.goTo('#contact')">
-            Contact
-          </v-btn>
-        </div>
-        <v-col
-          class="text-center"
-          cols="12"
-        >
-          {{ new Date().getFullYear() }} — <strong>© Mathias Top</strong>
-        </v-col>
-      </v-row>
+    <v-footer color="blue darken-4" dark padless class="justify-center">
+      <div class="d-sm-block d-none">
+        <v-btn text x-large @click="$vuetify.goTo('#index')">
+          Index
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#experiences')">
+          Experiences
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#formations')">
+          Formations
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#competences')">
+          Compétences
+        </v-btn>
+        <v-btn text x-large @click="$vuetify.goTo('#contact')">
+          Contact
+        </v-btn>
+      </div>
+      <p>
+        {{ new Date().getFullYear() }} — <strong>© Mathias Top</strong>
+      </p>
     </v-footer>
   </v-app>
 </template>
